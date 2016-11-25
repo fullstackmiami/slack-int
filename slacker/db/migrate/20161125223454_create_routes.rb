@@ -5,6 +5,7 @@ class CreateRoutes < ActiveRecord::Migration[5.0]
       t.text :description
       t.integer :rating
       t.string :location
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
