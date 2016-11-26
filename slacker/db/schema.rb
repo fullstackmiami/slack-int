@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161126021229) do
+ActiveRecord::Schema.define(version: 20161126025634) do
 
   create_table "bar_routes", force: :cascade do |t|
     t.integer  "bar_id"
     t.integer  "route_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "order"
   end
 
   create_table "bars", force: :cascade do |t|
